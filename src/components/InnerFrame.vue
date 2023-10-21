@@ -1,30 +1,28 @@
 <template>
     <div id="outer_frame">
         <div id="inner_frame">
-        
-    </div>
+           <slot></slot>
+        </div>
     </div>
     
 </template>
 
 <script>
+    
     export default {
+       
         name: 'InnerFrame',
     }
 </script>
 
 
-<style>
+<style scoped>
     #inner_frame {
         background-color: white;
         width: 90%;
         height: 95%;
         display: flex;
         opacity: 95%;
-        justify-content: center
-        ;
-        
-        
     }
     #outer_frame {
         width: 100%;

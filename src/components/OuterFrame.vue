@@ -1,16 +1,17 @@
 <template>
+  <NavigationBar/>
   <div class="fullscreen-image">
     <div :style="imageStyle">
-      <InnerFrame />
+      <slot></slot>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import InnerFrame from "./InnerFrame.vue";
+import NavigationBar from './NavigationBar.vue';
 export default {
   components: {
-    InnerFrame
+    NavigationBar,
   },  
 
 
