@@ -1,13 +1,14 @@
-import Home from "../views/Home.vue"
+import Home from "@/views/Home.vue"
+import Pomodoro from "@/views/PomodoroTimer.vue"
 
 const routes = [
     {
         path: '/',
-        component: () => import('@/views/Home.vue'),
+        component: Home,
     },
     {
         path: '/pomodoroTimer',
-        component: () => import('@/views/PomodoroTimer.vue')
+        component: Pomodoro
     }
   
 ]
